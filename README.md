@@ -36,7 +36,7 @@ Built-in feature from Next.js:
 #### 1. Clone repo
 
 ```
-git clone https://github.com/issaafalkattan/react-landing-page-template-2021.git
+git clone git@github.com:pappanick/op3c-react.git
 cd react-landing-page-template-2021
 yarn
 ```
