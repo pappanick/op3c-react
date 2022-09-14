@@ -16,8 +16,8 @@ const App = () => {
       <div className={`relative bg-background`}>
         <div className="max-w-7xl mx-auto">
           <div
-            // className={`relative z-10 pb-8 bg-background sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32`}
-            className={`relative z-10 pb-8 bg-background sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32`}
+            className={`relative z-10 pb-8 bg-background sm:pb-16 md:pb-20 lg:max-w-xl lg:w-full lg:pb-28 xl:pb-32`}
+            // className={`relative z-10 pb-8 bg-background sm:pb-16 md:pb-20 lg:max-w-xl lg:w-1/2 lg:pb-28 xl:pb-32`}
           >
             <Header />
             <MainHero />

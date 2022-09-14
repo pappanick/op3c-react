@@ -1,7 +1,6 @@
 import React from 'react';
 
 import config from '../config/index.json';
-import Divider from './Divider';
 
 const Product = () => {
   const { product } = config;
@@ -23,7 +22,7 @@ const Product = () => {
             </span>
           ))}
         </h1>
-        <Divider />
+        {/* <Divider /> */}
         <div className={`flex flex-wrap`}>
           <div className={`w-5/6 sm:w-1/2 p-6 mt-20`}>
             <h3
