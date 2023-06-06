@@ -8,6 +8,7 @@ class MyDocument extends Document {
     return (
       <Html lang={AppConfig.locale}>
         <Head />
+        <title>Space OP3C | OP3C Algorithm </title>
         <body>
           <Main />
           <NextScript />

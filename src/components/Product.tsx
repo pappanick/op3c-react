@@ -9,7 +9,8 @@ const Product = () => {
 
   return (
     <section className={`bg-background py-8`} id="product">
-      <div className={`container max-w-5xl mx-auto m-8`}>
+      {/* <div role="document" className={`container max-w-5xl mx-auto m-8`}> */}
+      <div role="document" className={`w-5/6 sm:w-5/6 p-6 ml-20`}>
         <h1
           className={`w-full my-2 text-5xl font-bold leading-tight text-center text-primary`}
         >
@@ -24,7 +25,7 @@ const Product = () => {
         </h1>
         {/* <Divider /> */}
         <div className={`flex flex-wrap`}>
-          <div className={`w-5/6 sm:w-1/2 p-6 mt-20`}>
+          <div className={`w-full sm:w-full p-12 mt-12`}>
             <h3
               className={`text-3xl text-gray-800 font-bold leading-none mb-3`}
             >
@@ -32,7 +33,7 @@ const Product = () => {
             </h3>
             <p className={`text-gray-600`}>{firstItem?.description}</p>
           </div>
-          <div className={`w-full sm:w-1/2 p-6`}>
+          <div className={`w-full sm:w-full p-6 ml-24`}>
             <img
               className="h-6/6"
               src={firstItem?.img}
@@ -41,7 +42,7 @@ const Product = () => {
           </div>
         </div>
         <div className={`flex flex-wrap flex-col-reverse sm:flex-row`}>
-          <div className={`w-full sm:w-1/2 p-6`}>
+          <div className={`w-full sm:w-1/2 p-6 mt-10`}>
             <img
               className="h-6/6"
               src={secondItem?.img}
@@ -60,7 +61,7 @@ const Product = () => {
           </div>
         </div>
         <div className={`flex flex-wrap`}>
-          <div className={`w-5/6 sm:w-1/2 p-6 mt-20`}>
+          <div className={`w-full sm:w-full p-12 mt-12`}>
             <h3
               className={`text-3xl text-gray-800 font-bold leading-none mb-3`}
             >
@@ -68,13 +69,6 @@ const Product = () => {
             </h3>
             <p className={`text-gray-600`}>{thirdItem?.description}</p>
           </div>
-          {/* <div className={`w-full sm:w-1/2 p-6`}>
-            <img
-              className="h-6/6"
-              src={thirdItem?.img}
-              alt={thirdItem?.title}
-            />
-          </div> */}
         </div>
         <div className={`flex flex-wrap flex-col-reverse sm:flex-row`}>
           <div className={`w-full sm:w-1/2 p-6`}>
@@ -84,7 +78,7 @@ const Product = () => {
               alt={fourthItem?.title}
             />
           </div>
-          <div className={`w-full sm:w-1/2 p-6 mt-20`}>
+          <div className={`w-full sm:w-1/2 p-6 mt-10`}>
             <div className={`align-middle`}>
               <h3
                 className={`text-3xl text-gray-800 font-bold leading-none mb-3`}
@@ -96,7 +90,7 @@ const Product = () => {
           </div>
         </div>
         <div className={`flex flex-wrap`}>
-          <div className={`w-5/6 sm:w-1/2 p-6 mt-20`}>
+          <div className={`w-full sm:w-full p-6 mt-20`}>
             <h3
               className={`text-3xl text-gray-800 font-bold leading-none mb-3`}
             >
@@ -109,13 +103,9 @@ const Product = () => {
             <p className={`text-gray-600`}>{fifthItem?.description5}</p>
             <p className={`text-gray-600`}>{fifthItem?.description6}</p>
           </div>
-          <div className={`w-full sm:w-1/2 p-6`}>
-            <img
-              className="h-6/6"
-              src={fifthItem?.img}
-              alt={fifthItem?.title}
-            />
-          </div>
+        </div>
+        <div className={`w-full sm:w-full p-6 ml-16`}>
+          <img className="h-6/6" src={fifthItem?.img} alt={fifthItem?.title} />
         </div>
         <div className={`flex flex-wrap flex-col-reverse sm:flex-row`}>
           {/* <div className={`w-full sm:w-1/2 p-6`}>

@@ -3,6 +3,10 @@
     "name": "Planetek",
     "logo": "/assets/images/pkH_logo.png"
   },
+  "funding": {
+    "name": "ESPA",
+    "fundingLabel": "/assets/images/ΕΣΠΑ.png"
+  },
   "navigation": [
     {
       "name": "Product",
@@ -21,18 +25,24 @@
     "text": "Read more",
     "href": "#"
   },
+  "heroTitleLite": {
+    "title": "Space OP3C",
+    "subtitle": "JFPGA or SW solution for on-board hi-performance hyperspectral data compression and cloud classification",
+    "description": "JFPGA or SW solution for on-board hi-performance hyperspectral data compression and cloud classification",
+    "img": "/assets/images/OP3C.png"
+  },
   "mainHero": {
     "title": "Space OP3C",
     "subtitle": ":a compression algorithm used in space",
     "description": "JFPGA or SW solution for on-board hi-performance hyperspectral data compression and cloud classification",
     "img": "/assets/images/OP3C.png",
     "primaryAction": {
-      "text": "Read more",
-      "href": "#"
+      "text": "News",
+      "href": "News"
     },
     "secondaryAction": {
-      "text": "Email us",
-      "href": "mailto:info@planetek.gr?subject=I am interested in the OP3C algorithm"
+      "text": "About Funding",
+      "href": "#about"
     }
   },
   "product": {

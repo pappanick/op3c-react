@@ -5,7 +5,11 @@ import config from '../config/index.json';
 const MainHeroImage = () => {
   const { mainHero } = config;
   return (
-    <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+    <div
+      role="img"
+      aria-label="OP3C logo"
+      className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2"
+    >
       <img
         className="h-24 w-full object-contain sm:h-32 md:h-38 lg:w-full lg:h-full"
         // className="h-24 w-full object-cover sm:h-32 md:h-38 lg:w-full lg:h-full"
