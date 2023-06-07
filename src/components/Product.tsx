@@ -23,6 +23,12 @@ const Product = () => {
             </span>
           ))}
         </h1>
+        <h2>
+          {' '}
+          <p role="document" className="w-full sm:w-full p-12 text-border">
+            {product.description}
+          </p>
+        </h2>
         {/* <Divider /> */}
         <div className={`flex flex-wrap`}>
           <div className={`w-full sm:w-full p-12 mt-12`}>

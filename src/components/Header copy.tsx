@@ -23,27 +23,18 @@ const Menu = () => {
       </svg>
 
       <Popover>
-        <div role="alert" className="relative pt-6 px-4 sm:px-6 lg:px-8">
+        <div className="relative pt-6 px-4 sm:px-6 lg:px-8">
           <nav
             className="relative flex items-center justify-between sm:h-10 lg:justify-start"
             aria-label="Global"
           >
-            <div
-              role="link"
-              className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0"
-            >
-              <div
-                role="presentation"
-                className="flex items-center justify-between w-full md:w-auto"
-              >
-                <Link href="/" passHref>
+            <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
+              <div className="flex items-center justify-between w-full md:w-auto">
+                <a href="#">
                   <span className="sr-only">{companyName}</span>
                   <img alt="logo" className="h-16 w-auto sm:h-16" src={logo} />
-                </Link>
-                <div
-                  role="button"
-                  className="-mr-2 flex items-center md:hidden"
-                >
+                </a>
+                <div className="-mr-2 flex items-center md:hidden">
                   <Popover.Button
                     className={`bg-background rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary`}
                   >
@@ -53,10 +44,7 @@ const Menu = () => {
                 </div>
               </div>
             </div>
-            <div
-              role="navigation"
-              className="hidden md:block md:ml-10 md:pr-4 md:space-x-8"
-            >
+            <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
               {navigation.map((item) => (
                 <Link
                   spy={true}
@@ -71,10 +59,10 @@ const Menu = () => {
                 </Link>
               ))}
               <a
-                href="News"
+                href="#"
                 className={`font-medium text-primary hover:text-secondary`}
               >
-                News
+                Call to action
               </a>
             </div>
           </nav>
@@ -96,14 +84,11 @@ const Menu = () => {
             <div
               className={`rounded-lg shadow-md bg-background ring-1 ring-black ring-opacity-5 overflow-hidden`}
             >
-              <div
-                role="button"
-                className="px-5 pt-4 flex items-center justify-between"
-              >
+              <div className="px-5 pt-4 flex items-center justify-between">
                 <div>
                   <img className="h-8 w-auto" src={logo} alt="" />
                 </div>
-                <div role="button" className="-mr-2">
+                <div className="-mr-2">
                   <Popover.Button
                     className={`bg-background rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary`}
                   >
@@ -112,7 +97,7 @@ const Menu = () => {
                   </Popover.Button>
                 </div>
               </div>
-              <div role="link" className="px-2 pt-2 pb-3 space-y-1">
+              <div className="px-2 pt-2 pb-3 space-y-1">
                 {navigation.map((item) => (
                   <Link
                     spy={true}

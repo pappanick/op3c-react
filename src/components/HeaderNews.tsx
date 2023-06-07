@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 
 import { Popover, Transition } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
+// import { Link } from 'next/link';
 import { Link } from 'react-scroll';
 
 import config from '../config/index.json';
@@ -36,10 +37,12 @@ const Menu = () => {
                 role="presentation"
                 className="flex items-center justify-between w-full md:w-auto"
               >
+                {/* <a href="/"> */}
                 <Link href="/" passHref>
                   <span className="sr-only">{companyName}</span>
                   <img alt="logo" className="h-16 w-auto sm:h-16" src={logo} />
                 </Link>
+                {/* </a> */}
                 <div
                   role="button"
                   className="-mr-2 flex items-center md:hidden"
@@ -71,7 +74,7 @@ const Menu = () => {
                 </Link>
               ))}
               <a
-                href="News"
+                href="news"
                 className={`font-medium text-primary hover:text-secondary`}
               >
                 News
