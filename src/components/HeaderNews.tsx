@@ -2,14 +2,15 @@ import React, { Fragment } from 'react';
 
 import { Popover, Transition } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
-// import { Link } from 'next/link';
 import { Link } from 'react-scroll';
 
 import config from '../config/index.json';
+import CompanyLogo from './CompanyLogo';
 
 const Menu = () => {
-  const { navigation, company, callToAction } = config;
-  const { name: companyName, logo } = company;
+  const { navigation, company, OP3CLogo } = config;
+  const { img, name: OP3CLogoName } = OP3CLogo;
+  const { logo } = company;
 
   return (
     <>
@@ -22,7 +23,6 @@ const Menu = () => {
       >
         <polygon points="50,0 100,0 50,100 0,100" />
       </svg>
-
       <Popover>
         <div role="alert" className="relative pt-6 px-4 sm:px-6 lg:px-8">
           <nav
@@ -38,9 +38,9 @@ const Menu = () => {
                 className="flex items-center justify-between w-full md:w-auto"
               >
                 {/* <a href="/"> */}
-                <Link href="/" passHref>
-                  <span className="sr-only">{companyName}</span>
-                  <img alt="logo" className="h-16 w-auto sm:h-16" src={logo} />
+                <Link href="/">
+                  <span className="sr-only">{OP3CLogoName}</span>
+                  <img alt="logo" className="h-16 w-auto sm:h-16" src={img} />
                 </Link>
                 {/* </a> */}
                 <div
@@ -56,30 +56,12 @@ const Menu = () => {
                 </div>
               </div>
             </div>
+
             <div
               role="navigation"
               className="hidden md:block md:ml-10 md:pr-4 md:space-x-8"
-            >
-              {navigation.map((item) => (
-                <Link
-                  spy={true}
-                  active="active"
-                  smooth={true}
-                  duration={1000}
-                  key={item.name}
-                  to={item.href}
-                  className="font-medium text-gray-500 hover:text-gray-900"
-                >
-                  {item.name}
-                </Link>
-              ))}
-              <a
-                href="news"
-                className={`font-medium text-primary hover:text-secondary`}
-              >
-                News
-              </a>
-            </div>
+            ></div>
+            <CompanyLogo />
           </nav>
         </div>
 
@@ -115,6 +97,7 @@ const Menu = () => {
                   </Popover.Button>
                 </div>
               </div>
+
               <div role="link" className="px-2 pt-2 pb-3 space-y-1">
                 {navigation.map((item) => (
                   <Link
@@ -130,16 +113,20 @@ const Menu = () => {
                   </Link>
                 ))}
               </div>
-              <a
-                href={callToAction.href}
-                className={`block w-full px-5 py-3 text-center font-medium text-primary bg-gray-50 hover:bg-gray-100`}
-              >
-                {callToAction.text}
-              </a>
             </div>
           </Popover.Panel>
         </Transition>
       </Popover>
+      {/* <>
+        <div role="alert" className="relative pt-6 px-4 sm:px-6 lg:px-8">
+          <HeaderLogo />
+        </div>
+      </>
+      <>
+        <div role="alert" className="relative pt-6 px-4 sm:px-6 lg:px-8">
+          <CompanyLogo />
+        </div>
+      </> */}
     </>
   );
 };

@@ -7,8 +7,9 @@ import { Link } from 'react-scroll';
 import config from '../config/index.json';
 
 const Menu = () => {
-  const { navigation, company, callToAction } = config;
-  const { name: companyName, logo } = company;
+  const { navigation, OP3CLogo, company, callToAction } = config;
+  const { img, name: OP3CLogoName } = OP3CLogo;
+  const { logo } = company;
 
   return (
     <>
@@ -36,9 +37,10 @@ const Menu = () => {
                 role="presentation"
                 className="flex items-center justify-between w-full md:w-auto"
               >
-                <Link href="/" passHref>
-                  <span className="sr-only">{companyName}</span>
-                  <img alt="logo" className="h-16 w-auto sm:h-16" src={logo} />
+                {/* <a href="/"> */}
+                <Link href="/">
+                  <span className="sr-only">{OP3CLogoName}</span>
+                  <img alt="logo" className="h-16 w-auto sm:h-16" src={img} />
                 </Link>
                 <div
                   role="button"
@@ -59,7 +61,6 @@ const Menu = () => {
             >
               {navigation.map((item) => (
                 <Link
-                  spy={true}
                   active="active"
                   smooth={true}
                   duration={1000}
@@ -79,7 +80,6 @@ const Menu = () => {
             </div>
           </nav>
         </div>
-
         <Transition
           as={Fragment}
           enter="duration-150 ease-out"
@@ -103,6 +103,7 @@ const Menu = () => {
                 <div>
                   <img className="h-8 w-auto" src={logo} alt="" />
                 </div>
+
                 <div role="button" className="-mr-2">
                   <Popover.Button
                     className={`bg-background rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary`}
@@ -112,10 +113,10 @@ const Menu = () => {
                   </Popover.Button>
                 </div>
               </div>
+
               <div role="link" className="px-2 pt-2 pb-3 space-y-1">
                 {navigation.map((item) => (
                   <Link
-                    spy={true}
                     active="active"
                     smooth={true}
                     duration={1000}

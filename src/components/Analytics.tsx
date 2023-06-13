@@ -6,6 +6,7 @@ import Script from 'next/script';
 import { GA_ADS_ID } from '../lib/googleAds';
 import * as gtag from '../lib/gtag';
 
+// const GA_TRACKING_ID = 'GTM-WLT82ZP';
 const App = () => {
   const router = useRouter();
   useEffect(() => {

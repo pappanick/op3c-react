@@ -9,8 +9,8 @@
   },
   "navigation": [
     {
-      "name": "Product",
-      "href": "product"
+      "name": "Algorithm",
+      "href": "Algorithm"
     },
     {
       "name": "Features",

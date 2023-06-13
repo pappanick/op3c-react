@@ -3,13 +3,17 @@
     "name": "Planetek",
     "logo": "/assets/images/pkH_logo.png"
   },
+  "OP3CLogo": {
+    "name": "OP3C algorithm",
+    "img": "/assets/images/OP3C.png"
+  },
   "funding": {
     "name": "ESPA",
     "fundingLabel": "/assets/images/ΕΣΠΑ.png"
   },
   "navigation": [
     {
-      "name": "Product",
+      "name": "Algorithm",
       "href": "product"
     },
     {
@@ -24,6 +28,10 @@
   "callToAction": {
     "text": "Read more",
     "href": "#"
+  },
+  "sendToLocalhost": {
+    "text": "",
+    "href": "http://localhost:3000/"
   },
   "heroTitleLite": {
     "title": "Space OP3C",
@@ -113,12 +121,12 @@
       },
       {
         "name": "Adaptation",
-        "description": "adapts to sensors characteristics: the greater the spectral resolution, the higher the compression ratio.",
+        "description": "It adapts to sensors characteristics: the greater the spectral resolution, the higher the compression ratio.",
         "icon": "/assets/images/ts.png"
       },
       {
         "name": "Detection",
-        "description": "detects clouds and adapts compression. By applying the compression algorithm only to the land/sea pixels, the algorithm achieves higher variance description with the same threshold. This feature allows the algorithm to achieve higher compression ratios with better information modeling.",
+        "description": "It detects clouds and adapts compression. By applying the compression algorithm only to the land/sea pixels, the algorithm achieves higher variance description with the same threshold. This feature allows the algorithm to achieve higher compression ratios with better information modeling.",
         "icon": "/assets/images/nextjs.svg"
       },
       {

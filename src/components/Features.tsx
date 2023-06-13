@@ -4,16 +4,16 @@ import config from '../config/index.json';
 
 const Features = () => {
   const { features } = config;
-  const { title, subtitle, description, items: featuresList } = features;
+  const { subtitle, description, items: featuresList } = features;
   return (
     <div role="document" className={`py-12 bg-background`} id="features">
       <div role="document" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div role="document" className="lg:text-center">
-          <h2
+          {/* <h2
             className={`text-base text-primary font-semibold tracking-wide uppercase`}
           >
             {title}
-          </h2>
+          </h2> */}
           <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
             {subtitle}
           </p>

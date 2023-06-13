@@ -4,7 +4,7 @@ import config from '../config/index.json';
 
 const Product = () => {
   const { product } = config;
-  const [firstItem, secondItem, thirdItem, fourthItem, fifthItem, sixthItem] =
+  const [firstItem, secondItem, thirdItem, fourthItem, fifthItem] =
     product.items;
 
   return (
@@ -117,7 +117,7 @@ const Product = () => {
           {/* <div className={`w-full sm:w-1/2 p-6`}>
           <img className="h-6/6" src={sixthItem?.img} alt={sixthItem?.title} />
         </div> */}
-          <div className={`w-full sm:w-1/2 p-6 mt-20`}>
+          {/* <div className={`w-full sm:w-1/2 p-6 mt-20`}>
             <div className={`align-middle`}>
               <h3
                 className={`text-3xl text-gray-800 font-bold leading-none mb-3`}
@@ -126,7 +126,7 @@ const Product = () => {
               </h3>
               <p className={`text-gray-600 mb-8`}>{sixthItem?.description}</p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

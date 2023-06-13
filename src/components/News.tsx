@@ -13,19 +13,17 @@ const news = () => {
       <div role="document" className={`w-5/6 sm:w-5/6 p-6 ml-20`}>
         <div className={`flex flex-wrap`}>
           {/* Image */}
-          <div className={`w-full sm:w-full p-6 ml-24`}>
+          <div className={`w-full sm:w-full p-1 ml-24`}>
             <img
               className="h-6/6"
               src={firstItem?.img}
               alt={firstItem?.title}
             />
           </div>
-          <div className={`w-full sm:w-full p-12 mt-12`}>
+          <div className={`ww-full sm:w-full p-6 ml-24`}>
             <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
               {firstItem?.description}
             </div>
-          </div>
-          <div className={`w-full sm:w-full p-12 mt-12`}>
             <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
               <div className="rounded-md shadow">
                 <a
