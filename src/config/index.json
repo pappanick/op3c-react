@@ -9,6 +9,7 @@
   },
   "funding": {
     "name": "ESPA",
+    "text": "Financing from the European Union, European Regional Development Fund, EPANEK 2014-2020, Operational Program Competitiveness, Entrepreneurship Innovation, General Secretariat for Research and Innovation, ESPA 2014-2020, development - work - solidarity.",
     "fundingLabel": "/assets/images/ΕΣΠΑ.png"
   },
   "navigation": [
@@ -35,14 +36,14 @@
   },
   "heroTitleLite": {
     "title": "Space OP3C",
-    "subtitle": "JFPGA or SW solution for on-board hi-performance hyperspectral data compression and cloud classification",
-    "description": "JFPGA or SW solution for on-board hi-performance hyperspectral data compression and cloud classification",
+    "subtitle": "JFPGA or SW solution for on-board hi-performance hyperspectral data compression and cloud classification.",
+    "description": "JFPGA or SW solution for on-board hi-performance hyperspectral data compression and cloud classification.",
     "img": "/assets/images/OP3C.png"
   },
   "mainHero": {
     "title": "Space OP3C",
     "subtitle": ":a compression algorithm used in space",
-    "description": "JFPGA or SW solution for on-board hi-performance hyperspectral data compression and cloud classification",
+    "description": "JFPGA or SW solution for on-board hi-performance hyperspectral data compression and cloud classification.",
     "img": "/assets/images/OP3C.png",
     "primaryAction": {
       "text": "/News",
@@ -66,7 +67,7 @@
   },
   "product": {
     "title": "Space OP3C",
-    "description": "JFPGA or SW solution for on-board hi-performance hyperspectral data compression and cloud classification",
+    "description": "JFPGA or SW solution for on-board hi-performance hyperspectral data compression and cloud classification.",
     "items": [
       {
         "title": "On-board Processing for Compression and Clouds Classification",
@@ -137,7 +138,7 @@
     ]
   },
   "features": {
-    "title": " ",
+    "title": "Features",
     "subtitle": "Main Features",
     "description": "",
     "items": [

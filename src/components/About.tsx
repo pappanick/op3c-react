@@ -6,7 +6,7 @@ import CompanyLogo from './CompanyLogo';
 const About = () => {
   const { about, funding } = config;
   const { socialMedia } = about;
-  const { fundingLabel, name: ESPA } = funding;
+  const { text, fundingLabel, name: ESPA } = funding;
 
   return (
     <div
@@ -22,22 +22,22 @@ const About = () => {
         </div>
         <div role="document" className="flex items-center mt-6">
           <p className="mt-6 text-lg lg:text-l leading-none text-gray-900 dark:text-gray-50">
-            Financing from the European Union, European Regional Development
-            Fund, EPANEK 2014-2020, Operational Program Competitiveness,
-            Entrepreneurship Innovation, General Secretariat for Research and
-            Innovation, ESPA 2014-2020, development - work - solidarity.
+            {text}
           </p>
         </div>
       </div>
-
       <div
         role="presentation"
-        className="flex flex-col items-center justify-center mt-20"
+        className="flex flex-col items-center justify-center mt-10"
       >
         <>
           <CompanyLogo />
         </>
-
+      </div>
+      <div
+        role="presentation"
+        className="flex flex-col items-center justify-center mt-10"
+      >
         <div role="link" className="flex items-center gap-x-8 mt-6 h-8">
           <a
             aria-label="linkedin"

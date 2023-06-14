@@ -8,9 +8,16 @@ const news = () => {
   const [firstItem] = News.items;
 
   return (
-    <section className={`bg-background py-8`} id="product">
-      {/* <div role="document" className={`container max-w-5xl mx-auto m-8`}> */}
-      <div role="document" className={`w-5/6 sm:w-5/6 p-6 ml-20`}>
+    <section
+      className={`mx-auto container xl:px-20 lg:px-12 sm:px-6 px-4 bg-background py-8`}
+      id="product"
+    >
+      <div role="document" className={`container max-w-5xl mx-auto m-8`}>
+        {/* <div role="document" className={`w-5/6 sm:w-5/6 p-6 ml-20`}> */}
+        {/* <div
+        role="document"
+        className={`className="flex flex-col items-center justify-center"`}
+      > */}
         <div className={`flex flex-wrap`}>
           {/* Image */}
           <div className={`w-full sm:w-full p-1 ml-24`}>
@@ -20,7 +27,7 @@ const news = () => {
               alt={firstItem?.title}
             />
           </div>
-          <div className={`ww-full sm:w-full p-6 ml-24`}>
+          <div className={`w-full sm:w-full p-6 ml-24`}>
             <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
               {firstItem?.description}
             </div>

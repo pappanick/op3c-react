@@ -1,7 +1,6 @@
 import React from 'react';
 
 import About from '../components/About';
-import Analytics from '../components/Analytics';
 import HeaderNews from '../components/HeaderNews';
 import News from '../components/News';
 
@@ -31,7 +30,7 @@ const news = () => {
       <>
         <About />
       </>
-      <Analytics />
+      {/* <Analytics /> */}
     </div>
   );
 };

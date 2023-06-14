@@ -5,24 +5,15 @@ import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import { Link } from 'react-scroll';
 
 import config from '../config/index.json';
+import HeaderLogo from './HeaderLogo';
 
 const Menu = () => {
-  const { navigation, OP3CLogo, company, callToAction } = config;
-  const { img, name: OP3CLogoName } = OP3CLogo;
+  const { navigation, company, callToAction } = config;
+  // const { img, name: OP3CLogoName } = OP3CLogo;
   const { logo } = company;
 
   return (
     <>
-      <svg
-        className={`hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-background transform translate-x-1/2`}
-        fill="currentColor"
-        viewBox="0 0 100 100"
-        preserveAspectRatio="none"
-        aria-hidden="true"
-      >
-        <polygon points="50,0 100,0 50,100 0,100" />
-      </svg>
-
       <Popover>
         <div role="alert" className="relative pt-6 px-4 sm:px-6 lg:px-8">
           <nav
@@ -37,11 +28,11 @@ const Menu = () => {
                 role="presentation"
                 className="flex items-center justify-between w-full md:w-auto"
               >
-                {/* <a href="/"> */}
-                <Link href="/">
+                {/* <Link href="/" passHref>
                   <span className="sr-only">{OP3CLogoName}</span>
                   <img alt="logo" className="h-16 w-auto sm:h-16" src={img} />
-                </Link>
+                </Link> */}
+                <HeaderLogo></HeaderLogo>
                 <div
                   role="button"
                   className="-mr-2 flex items-center md:hidden"
@@ -80,6 +71,7 @@ const Menu = () => {
             </div>
           </nav>
         </div>
+
         <Transition
           as={Fragment}
           enter="duration-150 ease-out"
@@ -113,7 +105,6 @@ const Menu = () => {
                   </Popover.Button>
                 </div>
               </div>
-
               <div role="link" className="px-2 pt-2 pb-3 space-y-1">
                 {navigation.map((item) => (
                   <Link
