@@ -51,7 +51,7 @@ const Menu = () => {
                   <span
                     className={`font-medium text-tertiary hover:text-secondary`}
                   >
-                    Home
+                    Αρχική
                   </span>
                 </a>
                 {/* <a href="/">
