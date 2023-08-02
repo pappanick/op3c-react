@@ -28,12 +28,12 @@ const Menu = () => {
         <CompanyLogo />
       </div>
     </> */}
+        <a href="/">
+          <span className={`font-medium text-tertiary hover:text-secondary `}>
+            Αρχική
+          </span>
+        </a>
       </>
-      <a href="/">
-        <span className={`font-medium text-tertiary hover:text-secondary`}>
-          Αρχική
-        </span>
-      </a>
     </>
   );
 };
