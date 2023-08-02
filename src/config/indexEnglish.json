@@ -1,0 +1,217 @@
+{
+  "company": {
+    "name": "Planetek",
+    "logo": "/assets/images/pkH_logo.png"
+  },
+  "OP3CLogo": {
+    "name": "OP3C algorithm",
+    "img": "/assets/images/OP3C.png"
+  },
+  "funding": {
+    "name": "ESPA",
+    "text": "Financing from the European Union, European Regional Development Fund, EPANEK 2014-2020, Operational Program Competitiveness, Entrepreneurship Innovation, General Secretariat for Research and Innovation, ESPA 2014-2020, development - work - solidarity.",
+    "fundingLabel": "/assets/images/ΕΣΠΑ.png"
+  },
+  "navigation": [
+    {
+      "name": "Algorithm",
+      "href": "product"
+    },
+    {
+      "name": "Features",
+      "href": "features"
+    },
+    {
+      "name": "About",
+      "href": "about"
+    }
+  ],
+  "callToAction": {
+    "text": "Read more",
+    "href": "#"
+  },
+  "sendToLocalhost": {
+    "text": "",
+    "href": "http://localhost:3000/"
+  },
+  "mainHero": {
+    "title": "Space OP3C",
+    "subtitle": "Λύση JFPGA ή λογισμικού για υψηλής απόδοσης συμπίεση υπερφασματικών δεδομένων και ταξινόμηση νεφών εντός του πλοίου. (Λύση υψηλής απόδοσης για συμπίεση υπερφασματικών δεδομένων και ταξινόμηση νεφών πάνω στο πλοίο).",
+    "description": "Λύση JFPGA ή SW για συμπίεση υπερφασματικών δεδομένων υψηλής απόδοσης και ταξινόμηση νεφών εντός του πλοίου. (Λύση υψηλής απόδοσης για συμπίεση υπερφασματικών δεδομένων και ταξινόμηση νεφών πάνω στο πλοίο).",
+    "img": "/assets/images/OP3C.png",
+    "primaryAction": {
+      "text": "/News",
+      "href": "/News"
+    },
+    "secondaryAction": {
+      "text": "About Funding",
+      "href": "#about"
+    }
+  },
+  "Lang": {
+    "title": "Language",
+    "description": "the language of the website",
+    "img": "/assets/images/lang.svg",
+    "primaryAction": {
+      "text": "/Lang",
+      "href": "/Lang"
+    },
+    "secondaryAction": {
+      "text": "About Funding",
+      "href": "#about"
+    }
+  },
+  "EngLang": {
+    "title": "English Language",
+    "description": "the language of the website",
+    "img": "/assets/images/eng.svg",
+    "primaryAction": {
+      "text": "/Lang",
+      "href": "/Lang"
+    },
+    "secondaryAction": {
+      "text": "About Funding",
+      "href": "#about"
+    }
+  },
+  "GreekLang": {
+    "title": "Greek Language",
+    "description": "the language of the website",
+    "img": "/assets/images/greek.svg",
+    "primaryAction": {
+      "text": "/Lang",
+      "href": "/Lang"
+    },
+    "secondaryAction": {
+      "text": "About Funding",
+      "href": "#about"
+    }
+  },
+  "News": {
+    "title": "Νέα",
+    "items": [
+      {
+        "title": "SPOC-3127",
+        "description": "OP3C will fly on-board the SPOC-3127 mission.",
+        "href": "https://www.planetek.gr/news_events/news_archive/2023/06/esa_planetek_hellas_sign_eu1_million_contract_for_greek_secure_connectivity_and_eo_cubesat",
+        "img": "/assets/images/cubesat_-_esa_-_Planetek_Hellas-768x480.jpg"
+      }
+    ]
+  },
+  "product": {
+    "title": "Space OP3C",
+    "description": "JFPGA or SW solution for on-board hi-performance hyperspectral data compression and cloud classification.",
+    "items": [
+      {
+        "title": "On-board Processing for Compression and Clouds Classification",
+        "description": "OP3C compression technique achieves high compression ratios, low data distortion,still keeping a limited computation complexity suitable to the on-board constraints. OP3C compressed data can be further processed in their compressed form. This is a typical characteristic of the class of techniques known as compressed sensing. The OP3C compression methodology is named HUNPCA (Hybrid Un-mixing Principal Component Analysis) and is based on a spectral un-mixing procedure and PCA combined with a coding algorithm. The international patent was granted to Planetek Hellas (EP3347852)",
+        "img": "/assets/images/Comparison.png"
+      },
+      {
+        "title": "Capabilities",
+        "description": "OP3C can consider the cloud coverage, both at pixel level and as overall coverage percentage, in order to dynamically adapt compression to image content.",
+        "img": "/assets/images/CompressionRatioGraph.png"
+      },
+      {
+        "title": "Deployments",
+        "description": "The performances of the OP3C compressor have been demonstrated on two different sensors: AVIRIS (airborne) and Hyperion (spaceborne) on the standard dataset (Aaron et al. 2009) adopted by NASA and CCSDS for hyper-spectral compressor benchmarking"
+      },
+      {
+        "title": "Performance",
+        "description": "The HUNPCA compression algorithm has been evaluated in terms of data loss according to the similarity metric Spectral Angle Difference (SAD) and the Root Mean Square Error (RMSE). Its performance is compared with the CCSDS 121.0, 122.0 and 123.0 compressors.",
+        "img": "/assets/images/PerformanceTable.png"
+      },
+      {
+        "title": "HUNPCA applicable sensors:",
+        "description": "1. Achieves high compression ratios without significant information losses (estimated data volume reduction from 12 to 22 times)",
+        "description2": "2. Provides both near-lossless or lossy compression modes upon configuration",
+        "description3": "3. Performs de-noising of the hyper-spectral image bands",
+        "description4": "4. Adapts to sensor's characteristics: the greater the spectral resolution, the higher the compression ratio.",
+        "description5": "5. Detects clouds and adapts compression. By applying the compression algorithm only to the land/sea pixels, the algorithm achieves higher variance description with the same threshold. This feature allows the algorithm to achieve higher compression ratios with better information modeling.",
+        "description6": "6. The algorithm allows data processing in their compressed form, i.e. other processes / workflows can be applied without decompressing the image (e.g. useful for on board classification)",
+        "img": "/assets/images/CompressionFigure.png"
+      }
+    ]
+  },
+  "sensors": {
+    "title": " ",
+    "subtitle": "HUNPCA applicable sensors:",
+    "description": "",
+    "items": [
+      {
+        "name": "Hyperspectral",
+        "description": "Hyperspectral sensors",
+        "icon": "/assets/images/react.png"
+      },
+      {
+        "name": "Spectrometers",
+        "description": "Imaging spectrometers",
+        "icon": "/assets/images/tailwindcss.svg"
+      },
+      {
+        "name": "Infrared",
+        "description": "Sounding (infrared) imaging sensors",
+        "icon": "/assets/images/nextjs.svg"
+      },
+      {
+        "name": "Adaptation",
+        "description": "It adapts to sensors characteristics: the greater the spectral resolution, the higher the compression ratio.",
+        "icon": "/assets/images/ts.png"
+      },
+      {
+        "name": "Detection",
+        "description": "It detects clouds and adapts compression. By applying the compression algorithm only to the land/sea pixels, the algorithm achieves higher variance description with the same threshold. This feature allows the algorithm to achieve higher compression ratios with better information modeling.",
+        "icon": "/assets/images/nextjs.svg"
+      },
+      {
+        "name": "Thermal",
+        "description": "Thermal hyperspectral imagers",
+        "icon": "/assets/images/ts.png"
+      }
+    ]
+  },
+  "features": {
+    "title": "Features",
+    "subtitle": "Main Features",
+    "description": "",
+    "items": [
+      {
+        "name": "Hyperspectral",
+        "description": "Hyperspectral sensors",
+        "icon": "/assets/images/react.png"
+      },
+      {
+        "name": "Spectrometers",
+        "description": "Imaging spectrometers",
+        "icon": "/assets/images/tailwindcss.svg"
+      },
+      {
+        "name": "Infrared",
+        "description": "Sounding (infrared) imaging sensors",
+        "icon": "/assets/images/nextjs.svg"
+      },
+      {
+        "name": "Adaptation",
+        "description": "adapts to sensors characteristics: the greater the spectral resolution, the higher the compression ratio.",
+        "icon": "/assets/images/ts.png"
+      },
+      {
+        "name": "Detection",
+        "description": "detects clouds and adapts compression. By applying the compression algorithm only to the land/sea pixels, the algorithm achieves higher variance description with the same threshold. This feature allows the algorithm to achieve higher compression ratios with better information modeling.",
+        "icon": "/assets/images/nextjs.svg"
+      },
+      {
+        "name": "Thermal",
+        "description": "Thermal hyperspectral imagers",
+        "icon": "/assets/images/ts.png"
+      }
+    ]
+  },
+  "about": {
+    "sections": [],
+    "socialMedia": {
+      "twitter": "https://twitter.com/planetekhellas",
+      "linkedin": "https://gr.linkedin.com/company/planetek-hellas/"
+    }
+  }
+}
