@@ -37,7 +37,7 @@ const news = () => {
                   href={firstItem?.href}
                   className={`w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-background bg-primary hover:bg-border hover:text-primary md:py-4 md:text-lg md:px-10`}
                 >
-                  Read More{' '}
+                  Διάβασε περισσότερα{' '}
                 </a>
               </div>
             </div>
