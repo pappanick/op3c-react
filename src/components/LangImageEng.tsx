@@ -51,7 +51,6 @@ const LangImage = () => {
             </div>
           </nav>
         </div>
-        f
         <Popover.Panel
           focus
           className="absolute z-10 top-0  p-2 transition transform origin-top-right md:hidden"

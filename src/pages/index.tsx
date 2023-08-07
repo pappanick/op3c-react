@@ -1,18 +1,18 @@
 import React from 'react';
 
-import About from '../components/About';
-import Features from '../components/Features';
 import Header from '../components/Header';
 // import LazyShow from '../components/LazyShow';
 // import MainHeroImage from '../components/MainHeroImage';
 // import MainHeroImage from '../components/MainHeroImage';
 // import NestedLayout from '../components/nested-layout';
-import Product from '../components/Product';
 // import {IntlProvider} from 'react-intl';
 // import Greek from '../config/indexGreek.json';
 // import English from '../config/index.json";
 // const locale = navigator.language;
 import '../components/i18next.d';
+import About from '../components/About';
+import Features from '../components/Features';
+import Product from '../components/Product';
 
 // let lang;
 // if (locale==="en") {
