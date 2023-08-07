@@ -23,10 +23,33 @@ const Product = () => {
             </span>
           ))}
         </h1>
+
         <h2>
           {' '}
           <p role="document" className="w-full sm:w-full p-12 text-border">
-            {product.description}
+            <div className={`flex flex-wrap`}>
+              <div className={`w-full sm:w-full p-6 mt-20`}>
+                <h3
+                  className={`text-3xl text-gray-800 font-bold leading-none mb-3`}
+                >
+                  {product.title}
+                </h3>
+                <p className={`text-gray-600`}>{product.introduction1}</p>
+                <div className={`w-full sm:w-full p-6`}>
+                  <p className={`text-gray-600`}>{product.introduction2}</p>
+                  <p className={`text-gray-600`}>{product.introduction3}</p>
+                </div>
+                <p className={`text-gray-600`}>{product.introduction4}</p>
+              </div>
+              <div className={`w-full sm:w-full p-6 mt-20`}>
+                <p className={`text-gray-600`}>{product.description1}</p>
+                <p className={`text-gray-600`}>{product.description2}</p>
+                <p className={`text-gray-600`}>{product.description3}</p>
+              </div>
+            </div>
+            {/* {product.description1}
+            {product.description2}
+            {product.description3} */}
           </p>
         </h2>
         {/* <Divider /> */}
@@ -102,7 +125,7 @@ const Product = () => {
             >
               {fifthItem?.title}
             </h3>
-            <p className={`text-gray-600`}>{fifthItem?.description}</p>
+            <p className={`text-gray-600`}>{fifthItem?.description1}</p>
             <p className={`text-gray-600`}>{fifthItem?.description2}</p>
             <p className={`text-gray-600`}>{fifthItem?.description3}</p>
             <p className={`text-gray-600`}>{fifthItem?.description4}</p>
