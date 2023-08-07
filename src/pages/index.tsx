@@ -1,6 +1,5 @@
 import React from 'react';
 
-import Header from '../components/Header';
 // import LazyShow from '../components/LazyShow';
 // import MainHeroImage from '../components/MainHeroImage';
 // import MainHeroImage from '../components/MainHeroImage';
@@ -12,6 +11,7 @@ import Header from '../components/Header';
 import '../components/i18next.d';
 import About from '../components/About';
 import Features from '../components/Features';
+import Header from '../components/Header';
 import Product from '../components/Product';
 
 // let lang;
